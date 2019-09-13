@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH --nodes=4/8/16/24
+#SBATCH --ntasks=64
+#SBATCH --ntasks-per-node=16/24   firstcase 16*4=64, other 24ntask,192,384,576
+#SBATCH --time=24:00:00
+#SBATCH --begin=now
+#SBATCH --mail-user=xxxxxx.yyyy@zzzz.fr
+#SBATCH --mail-type=FAIL
+#SBATCH --job-name=ss1.5
+#SBATCH --partition=medium 4 short  (8-16) 24 huge 4 short
+module purge
+module load starccm/12.04
+
+module list
+export OMP_PROC_BIND=true
+export OMP_NUM_THREADS=1
+SLURM_NODEFILE=my_slurm_node.$$
+
+WORKFILE=./
+SIM_FILE=$WORKFILE/abc.sim
+
+srun hostname | sort > $SLURM_NODEFILE
+EXE=starccm+
+
+echo $SLURM_NTASKS
+
+$EXE -power -podkey "YvKTzRiNLKLXmCfLiYS6pFewzaI" -licpath "1999@flex.cd-adapco.com" -batch $starMacros -machinefile $SLURM_NODEFILE -time -np $SLURM_NTASKS -rsh ssh $SIM_FILE > output
+
+rm $SLURM_NODEFILE

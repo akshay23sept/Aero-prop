@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH --nodes=4
+#SBATCH --ntasks=64
+#SBATCH --ntasks-per-node=16
+#SBATCH --time=48:00:00
+#SBATCH --begin=now
+#SBATCH --mail-user=Akshay.ANAND@isae-supaero.fr
+#SBATCH --mail-type=FAIL
+#SBATCH --job-name=Prop@10m
+
+module purge
+module load starccm/12.04
+
+module list
+export OMP_PROC_BIND=true
+export OMP_NUM_THREADS=1
+SLURM_NODEFILE=my_slurm_node.$$
+
+WORKFILE=./
+SIM_FILE=$WORKFILE/TestcaseCJ1at10mult.sim
+
+srun hostname | sort > $SLURM_NODEFILE
+EXE=starccm+
+
+echo $SLURM_NTASKS
+
+$EXE -power -podkey "YvKTzRiNLKLXmCfLiYS6pFewzaI" -licpath "1999@flex.cd-adapco.com" -batch $starMacros -machinefile $SLURM_NODEFILE -time -np $SLURM_NTASKS -rsh ssh $SIM_FILE > output
+
+rm $SLURM_NODEFILE

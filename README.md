@@ -5,7 +5,7 @@ This work has been carried out as a part of master's thesis for a period of six 
 High incidence angle influences the aerodynamic efforts of rotors which are very important to precisely estimate the performance of vertical take-off and landing aircraft. This research work presents the use of Unsteady Reynolds averaged Navier Stokes (URANS) to analyze the rotors at high incidence angles. <code>Spalart-Allmaras></code> turbulence model was used after comparison with other commonly used RANS models for instance K-ω SST and K-ε realizable models. In the simulation incidence angle were varied from 0° to 90° and the results were compared with the experimental data to validate the computation. The results of simulations were compared with [Yuchen's experiment](https://github.com/akshay23sept/Aero-prop/blob/master/Literature/Yuchens_expt.pdf) perfoemd at ISAE-SUPAERO's low Reynolds number wind tunnel (SaBRe).
 
 ## Computations
-The computations has been performed using high performance computing (HPC) cluster of ISAE-SUPAERO, Toulouse, France.
+The computations has been performed using <code>high performance computing (HPC)</code> cluster of ISAE-SUPAERO, Toulouse, France. Commercial CFD code STAR-CCM+ was used for computations. While comparison of numerical results with computations it was noticed that at low advance ration the results (aerodynamic coefficients) from numerical simulation and experiments are non-comparable, usually it was expected because when flow becomes unstable <code>URANS</code> is unable to capture the flow physics precisely even if we use a very coarse mesh. To address these cases a few computations were performed using in-house <code>Large Eddy Simulation (LES)</code> codes.
 
 
 

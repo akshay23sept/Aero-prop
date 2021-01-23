@@ -2,7 +2,7 @@
 This work has been carried out as a part of master's thesis for a period of six months from March 2019 to September 2019 in the Department of Aerodynamics and Propulsion at [ISAE-SUPAERO Toulouse, France](https://www.isae-supaero.fr/fr/recherche/departements/aerodynamique-propulsion/daep/).
 
 ## Introduction
-High incidence angle influences the aerodynamic efforts of rotors which are very important to precisely estimate the performance of vertical take-off and landing aircraft. This research work presents the use of Unsteady Reynolds averaged Navier Stokes (URANS) to analyze the rotors at high incidence angles. <code>Spalart-Allmaras></code> turbulence model was used after comparison with other commonly used RANS models for instance K-ω SST and K-$\epsilon$ realizable models. 
+High incidence angle influences the aerodynamic efforts of rotors which are very important to precisely estimate the performance of vertical take-off and landing aircraft. This research work presents the use of Unsteady Reynolds averaged Navier Stokes (URANS) to analyze the rotors at high incidence angles. <code>Spalart-Allmaras></code> turbulence model was used after comparison with other commonly used RANS models for instance K-ω SST and K-ε realizable models. 
 <p><code>Aero-Prop</code> repository contains a group of pythonic subroutines (codes) </p>
 
 

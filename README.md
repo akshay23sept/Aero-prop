@@ -1,5 +1,5 @@
 ### Aerodynamic Efforts of Propellers at High Incidence Angle Using 3D High Fidelity Simulations (Aero-Prop)
-This work has been carried out as a part of master's thesis from March 2019 to September 2019 in the Department of Aerodynamics and Propulsion at [ISAE-SUPAERO Toulouse, France](https://www.isae-supaero.fr/fr/recherche/departements/aerodynamique-propulsion/daep/).
+This work has been carried out as a part of master's thesis for a period of six months from March 2019 to September 2019 in the Department of Aerodynamics and Propulsion at [ISAE-SUPAERO Toulouse, France](https://www.isae-supaero.fr/fr/recherche/departements/aerodynamique-propulsion/daep/).
 
 [ISAE-SUPAERO Toulouse, France] in Department of Aerodynamics and Propulsion
 

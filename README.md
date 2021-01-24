@@ -8,7 +8,7 @@ High incidence angle influences the aerodynamic efforts of rotors which are very
 The computations has been performed using <code>high performance computing (HPC)</code> cluster of ISAE-SUPAERO, Toulouse, France. Commercial CFD code of STAR-CCM+ was used for computations. While comparing the numerical results with experiments it was noticed that at low advance ratios the results (aerodynamic coefficients) from numerical simulation and experiments are non-comparable (higher % error), usually it was expected because when flow becomes unstable <code>URANS</code> is unable to capture the flow physics precisely even if a very coarse mesh is used. To address these cases a few computations were performed using in-house <code>Large Eddy Simulation (LES)</code> codes. LES results was in very close proximity to the experimental data.
 
 ## Experimental Data
-<div class="highlight highlight-source-shell"><pre>$ https://github.com/akshay23sept/Aero-prop/tree/master/Experimental_data<</pre></div>
+<div class="highlight highlight-source-shell"><pre>$ https://github.com/akshay23sept/Aero-prop/tree/master/Experimental_data</pre></div>
 
-
+## Issues
 

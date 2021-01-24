@@ -11,4 +11,6 @@ The computations has been performed using <code>high performance computing (HPC)
 <div class="highlight highlight-source-shell"><pre>$ https://github.com/akshay23sept/Aero-prop/tree/master/Experimental_data</pre></div>
 
 ## Issues
+To learn more about the project or data feel free to raise an issue at https://github.com/akshay23sept/Aero-prop.
+
 

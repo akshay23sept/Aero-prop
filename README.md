@@ -13,4 +13,5 @@ The computations has been performed using <code>high performance computing (HPC)
 ## Issues
 To learn more about the project or data feel free to raise an issue at https://github.com/akshay23sept/Aero-prop.
 
-
+## Contributor
+Akshay Anand 
